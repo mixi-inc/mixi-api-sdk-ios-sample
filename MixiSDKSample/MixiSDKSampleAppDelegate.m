@@ -23,6 +23,10 @@
 {
     // Override point for customization after application launch.
     // Add the main view controller's view to the window and display.
+#ifdef PleaseInputTheseConstansAndDeleteThisLine
+    MixiUtilShowErrorMessage(@"Config.hを設定してください。");
+    return NO;
+#endif
     self.window.rootViewController = self.mainViewController;
     [self.window makeKeyAndVisible];
     
