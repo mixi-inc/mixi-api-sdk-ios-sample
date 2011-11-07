@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2214AC42143D499600E1D41A /* ChooseAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2214AC3C143D499600E1D41A /* ChooseAPIViewController.m */; };
+		2214AC43143D499600E1D41A /* ChooseAPIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2214AC3D143D499600E1D41A /* ChooseAPIViewController.xib */; };
+		2214AC44143D499600E1D41A /* EditBodyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2214AC40143D499600E1D41A /* EditBodyViewController.m */; };
+		2214AC45143D499600E1D41A /* EditBodyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2214AC41143D499600E1D41A /* EditBodyViewController.xib */; };
+		2214AC52143D49AE00E1D41A /* RequestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2214AC47143D49AE00E1D41A /* RequestView.xib */; };
+		2214AC53143D49AE00E1D41A /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2214AC49143D49AE00E1D41A /* RequestViewController.m */; };
+		2214AC54143D49AE00E1D41A /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2214AC4B143D49AE00E1D41A /* SettingsView.xib */; };
+		2214AC55143D49AE00E1D41A /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2214AC4D143D49AE00E1D41A /* SettingsViewController.m */; };
+		2214AC56143D49AE00E1D41A /* MixiApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2214AC51143D49AE00E1D41A /* MixiApi.m */; };
+		22A43B83143BF8F8005E2A52 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A43B82143BF8F8005E2A52 /* UIKit.framework */; };
+		22A43B85143BF8F8005E2A52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A43B84143BF8F8005E2A52 /* Foundation.framework */; };
+		22A43B87143BF8F8005E2A52 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A43B86143BF8F8005E2A52 /* CoreGraphics.framework */; };
+		22A43B8D143BF8F8005E2A52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22A43B8B143BF8F8005E2A52 /* InfoPlist.strings */; };
+		22A43B90143BF8F8005E2A52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43B8F143BF8F8005E2A52 /* main.m */; };
+		22A43B93143BF8F8005E2A52 /* MixiSDKSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43B92143BF8F8005E2A52 /* MixiSDKSampleAppDelegate.m */; };
+		22A43BBD143BF975005E2A52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22A43BB5143BF975005E2A52 /* InfoPlist.strings */; };
+		22A43BBE143BF975005E2A52 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22A43BB7143BF975005E2A52 /* MainWindow.xib */; };
+		22A43C46143BF998005E2A52 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A43C45143BF998005E2A52 /* CFNetwork.framework */; };
+		22A43C48143BF99D005E2A52 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A43C47143BF99D005E2A52 /* Security.framework */; };
+		22A43C4A143BF9A1005E2A52 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A43C49143BF9A1005E2A52 /* SystemConfiguration.framework */; };
+		22A43DB3143C2481005E2A52 /* Doxyfile in Resources */ = {isa = PBXBuildFile; fileRef = 22A43D5D143C2481005E2A52 /* Doxyfile */; };
+		22A43DB4143C2481005E2A52 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D61143C2481005E2A52 /* Reachability.m */; };
+		22A43DB5143C2481005E2A52 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D64143C2481005E2A52 /* NSObject+SBJson.m */; };
+		22A43DB6143C2481005E2A52 /* SBJson-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 22A43D65143C2481005E2A52 /* SBJson-LICENSE.txt */; };
+		22A43DB7143C2481005E2A52 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D68143C2481005E2A52 /* SBJsonParser.m */; };
+		22A43DB8143C2481005E2A52 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D6A143C2481005E2A52 /* SBJsonStreamParser.m */; };
+		22A43DB9143C2481005E2A52 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D6C143C2481005E2A52 /* SBJsonStreamParserAccumulator.m */; };
+		22A43DBA143C2481005E2A52 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D6E143C2481005E2A52 /* SBJsonStreamParserAdapter.m */; };
+		22A43DBB143C2481005E2A52 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D70143C2481005E2A52 /* SBJsonStreamParserState.m */; };
+		22A43DBC143C2481005E2A52 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D72143C2481005E2A52 /* SBJsonStreamWriter.m */; };
+		22A43DBD143C2481005E2A52 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D74143C2481005E2A52 /* SBJsonStreamWriterAccumulator.m */; };
+		22A43DBE143C2481005E2A52 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D76143C2481005E2A52 /* SBJsonStreamWriterState.m */; };
+		22A43DBF143C2481005E2A52 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D78143C2481005E2A52 /* SBJsonTokeniser.m */; };
+		22A43DC0143C2481005E2A52 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D7A143C2481005E2A52 /* SBJsonUTF8Stream.m */; };
+		22A43DC1143C2481005E2A52 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D7C143C2481005E2A52 /* SBJsonWriter.m */; };
+		22A43DC2143C2481005E2A52 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D7F143C2481005E2A52 /* SFHFKeychainUtils.m */; };
+		22A43DC3143C2481005E2A52 /* History.txt in Resources */ = {isa = PBXBuildFile; fileRef = 22A43D80143C2481005E2A52 /* History.txt */; };
+		22A43DC4143C2481005E2A52 /* LICENSE-2.0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 22A43D81143C2481005E2A52 /* LICENSE-2.0.txt */; };
+		22A43DC5143C2481005E2A52 /* Mixi.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D83143C2481005E2A52 /* Mixi.m */; };
+		22A43DC6143C2481005E2A52 /* MixiConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D86143C2481005E2A52 /* MixiConfig.m */; };
+		22A43DC7143C2481005E2A52 /* MixiRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D89143C2481005E2A52 /* MixiRequest.m */; };
+		22A43DC8143C2481005E2A52 /* MixiURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D8D143C2481005E2A52 /* MixiURLConnection.m */; };
+		22A43DC9143C2481005E2A52 /* MixiURLDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D8F143C2481005E2A52 /* MixiURLDelegate.m */; };
+		22A43DCA143C2481005E2A52 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 22A43D90143C2481005E2A52 /* README */; };
+		22A43DCB143C2481005E2A52 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 22A43D91143C2481005E2A52 /* README.markdown */; };
+		22A43DCC143C2481005E2A52 /* mixi_map_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A43D93143C2481005E2A52 /* mixi_map_bg.png */; };
+		22A43DCD143C2481005E2A52 /* mixi_map_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A43D94143C2481005E2A52 /* mixi_map_bg@2x.png */; };
+		22A43DCE143C2481005E2A52 /* mixi_map_list.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A43D95143C2481005E2A52 /* mixi_map_list.png */; };
+		22A43DCF143C2481005E2A52 /* mixi_map_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A43D96143C2481005E2A52 /* mixi_map_list@2x.png */; };
+		22A43DD0143C2481005E2A52 /* mixi_map_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A43D97143C2481005E2A52 /* mixi_map_logo.png */; };
+		22A43DD1143C2481005E2A52 /* mixi_map_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A43D98143C2481005E2A52 /* mixi_map_logo@2x.png */; };
+		22A43DD2143C2481005E2A52 /* mixi_map_search.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A43D99143C2481005E2A52 /* mixi_map_search.png */; };
+		22A43DD3143C2481005E2A52 /* mixi_map_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A43D9A143C2481005E2A52 /* mixi_map_search@2x.png */; };
+		22A43DD4143C2481005E2A52 /* MixiRefreshTokenURLDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43D9F143C2481005E2A52 /* MixiRefreshTokenURLDelegate.m */; };
+		22A43DD5143C2481005E2A52 /* MixiReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43DA1143C2481005E2A52 /* MixiReporter.m */; };
+		22A43DD6143C2481005E2A52 /* MixiUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43DA3143C2481005E2A52 /* MixiUtils.m */; };
+		22A43DD7143C2481005E2A52 /* MixiADBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43DA6143C2481005E2A52 /* MixiADBannerView.m */; };
+		22A43DD8143C2481005E2A52 /* MixiImageButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43DA8143C2481005E2A52 /* MixiImageButtonView.m */; };
+		22A43DD9143C2481005E2A52 /* MixiDownloadWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43DAB143C2481005E2A52 /* MixiDownloadWebViewDelegate.m */; };
+		22A43DDA143C2481005E2A52 /* MixiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43DAE143C2481005E2A52 /* MixiViewController.m */; };
+		22A43DDB143C2481005E2A52 /* MixiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22A43DAF143C2481005E2A52 /* MixiViewController.xib */; };
+		22A43DDC143C2481005E2A52 /* MixiWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A43DB1143C2481005E2A52 /* MixiWebViewController.m */; };
+		22A43DDD143C2481005E2A52 /* MixiWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22A43DB2143C2481005E2A52 /* MixiWebViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2214AC3B143D499600E1D41A /* ChooseAPIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseAPIViewController.h; sourceTree = "<group>"; };
+		2214AC3C143D499600E1D41A /* ChooseAPIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseAPIViewController.m; sourceTree = "<group>"; };
+		2214AC3D143D499600E1D41A /* ChooseAPIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseAPIViewController.xib; sourceTree = "<group>"; };
+		2214AC3F143D499600E1D41A /* EditBodyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditBodyViewController.h; sourceTree = "<group>"; };
+		2214AC40143D499600E1D41A /* EditBodyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBodyViewController.m; sourceTree = "<group>"; };
+		2214AC41143D499600E1D41A /* EditBodyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditBodyViewController.xib; sourceTree = "<group>"; };
+		2214AC47143D49AE00E1D41A /* RequestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestView.xib; sourceTree = "<group>"; };
+		2214AC48143D49AE00E1D41A /* RequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestViewController.h; sourceTree = "<group>"; };
+		2214AC49143D49AE00E1D41A /* RequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestViewController.m; sourceTree = "<group>"; };
+		2214AC4B143D49AE00E1D41A /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
+		2214AC4C143D49AE00E1D41A /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		2214AC4D143D49AE00E1D41A /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		2214AC4F143D49AE00E1D41A /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		2214AC50143D49AE00E1D41A /* MixiApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiApi.h; sourceTree = "<group>"; };
+		2214AC51143D49AE00E1D41A /* MixiApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiApi.m; sourceTree = "<group>"; };
+		22A43B7E143BF8F8005E2A52 /* MixiSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixiSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A43B82143BF8F8005E2A52 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		22A43B84143BF8F8005E2A52 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		22A43B86143BF8F8005E2A52 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		22A43B8A143BF8F8005E2A52 /* MixiSDKSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MixiSDKSample-Info.plist"; sourceTree = "<group>"; };
+		22A43B8C143BF8F8005E2A52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22A43B8E143BF8F8005E2A52 /* MixiSDKSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixiSDKSample-Prefix.pch"; sourceTree = "<group>"; };
+		22A43B8F143BF8F8005E2A52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22A43B91143BF8F8005E2A52 /* MixiSDKSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiSDKSampleAppDelegate.h; sourceTree = "<group>"; };
+		22A43B92143BF8F8005E2A52 /* MixiSDKSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiSDKSampleAppDelegate.m; sourceTree = "<group>"; };
+		22A43BB6143BF975005E2A52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		22A43BB8143BF975005E2A52 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainWindow.xib; sourceTree = "<group>"; };
+		22A43C45143BF998005E2A52 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		22A43C47143BF99D005E2A52 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		22A43C49143BF9A1005E2A52 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		22A43D5D143C2481005E2A52 /* Doxyfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
+		22A43D60143C2481005E2A52 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		22A43D61143C2481005E2A52 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		22A43D63143C2481005E2A52 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		22A43D64143C2481005E2A52 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		22A43D65143C2481005E2A52 /* SBJson-LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SBJson-LICENSE.txt"; sourceTree = "<group>"; };
+		22A43D66143C2481005E2A52 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		22A43D67143C2481005E2A52 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		22A43D68143C2481005E2A52 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		22A43D69143C2481005E2A52 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		22A43D6A143C2481005E2A52 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		22A43D6B143C2481005E2A52 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		22A43D6C143C2481005E2A52 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		22A43D6D143C2481005E2A52 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		22A43D6E143C2481005E2A52 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		22A43D6F143C2481005E2A52 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		22A43D70143C2481005E2A52 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		22A43D71143C2481005E2A52 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		22A43D72143C2481005E2A52 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		22A43D73143C2481005E2A52 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		22A43D74143C2481005E2A52 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		22A43D75143C2481005E2A52 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		22A43D76143C2481005E2A52 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		22A43D77143C2481005E2A52 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		22A43D78143C2481005E2A52 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		22A43D79143C2481005E2A52 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		22A43D7A143C2481005E2A52 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		22A43D7B143C2481005E2A52 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		22A43D7C143C2481005E2A52 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		22A43D7E143C2481005E2A52 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		22A43D7F143C2481005E2A52 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		22A43D80143C2481005E2A52 /* History.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = History.txt; sourceTree = "<group>"; };
+		22A43D81143C2481005E2A52 /* LICENSE-2.0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LICENSE-2.0.txt"; sourceTree = "<group>"; };
+		22A43D82143C2481005E2A52 /* Mixi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixi.h; sourceTree = "<group>"; };
+		22A43D83143C2481005E2A52 /* Mixi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mixi.m; sourceTree = "<group>"; };
+		22A43D84143C2481005E2A52 /* MixiApiType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiApiType.h; sourceTree = "<group>"; };
+		22A43D85143C2481005E2A52 /* MixiConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiConfig.h; sourceTree = "<group>"; };
+		22A43D86143C2481005E2A52 /* MixiConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiConfig.m; sourceTree = "<group>"; };
+		22A43D87143C2481005E2A52 /* MixiDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiDelegate.h; sourceTree = "<group>"; };
+		22A43D88143C2481005E2A52 /* MixiRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiRequest.h; sourceTree = "<group>"; };
+		22A43D89143C2481005E2A52 /* MixiRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiRequest.m; sourceTree = "<group>"; };
+		22A43D8A143C2481005E2A52 /* MixiSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiSDK.h; sourceTree = "<group>"; };
+		22A43D8C143C2481005E2A52 /* MixiURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiURLConnection.h; sourceTree = "<group>"; };
+		22A43D8D143C2481005E2A52 /* MixiURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiURLConnection.m; sourceTree = "<group>"; };
+		22A43D8E143C2481005E2A52 /* MixiURLDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiURLDelegate.h; sourceTree = "<group>"; };
+		22A43D8F143C2481005E2A52 /* MixiURLDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiURLDelegate.m; sourceTree = "<group>"; };
+		22A43D90143C2481005E2A52 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		22A43D91143C2481005E2A52 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		22A43D93143C2481005E2A52 /* mixi_map_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixi_map_bg.png; sourceTree = "<group>"; };
+		22A43D94143C2481005E2A52 /* mixi_map_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mixi_map_bg@2x.png"; sourceTree = "<group>"; };
+		22A43D95143C2481005E2A52 /* mixi_map_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixi_map_list.png; sourceTree = "<group>"; };
+		22A43D96143C2481005E2A52 /* mixi_map_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mixi_map_list@2x.png"; sourceTree = "<group>"; };
+		22A43D97143C2481005E2A52 /* mixi_map_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixi_map_logo.png; sourceTree = "<group>"; };
+		22A43D98143C2481005E2A52 /* mixi_map_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mixi_map_logo@2x.png"; sourceTree = "<group>"; };
+		22A43D99143C2481005E2A52 /* mixi_map_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixi_map_search.png; sourceTree = "<group>"; };
+		22A43D9A143C2481005E2A52 /* mixi_map_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mixi_map_search@2x.png"; sourceTree = "<group>"; };
+		22A43D9C143C2481005E2A52 /* MixiConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiConstants.h; sourceTree = "<group>"; };
+		22A43D9D143C2481005E2A52 /* MixiErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiErrorCodes.h; sourceTree = "<group>"; };
+		22A43D9E143C2481005E2A52 /* MixiRefreshTokenURLDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiRefreshTokenURLDelegate.h; sourceTree = "<group>"; };
+		22A43D9F143C2481005E2A52 /* MixiRefreshTokenURLDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiRefreshTokenURLDelegate.m; sourceTree = "<group>"; };
+		22A43DA0143C2481005E2A52 /* MixiReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiReporter.h; sourceTree = "<group>"; };
+		22A43DA1143C2481005E2A52 /* MixiReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiReporter.m; sourceTree = "<group>"; };
+		22A43DA2143C2481005E2A52 /* MixiUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiUtils.h; sourceTree = "<group>"; };
+		22A43DA3143C2481005E2A52 /* MixiUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiUtils.m; sourceTree = "<group>"; };
+		22A43DA5143C2481005E2A52 /* MixiADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiADBannerView.h; sourceTree = "<group>"; };
+		22A43DA6143C2481005E2A52 /* MixiADBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiADBannerView.m; sourceTree = "<group>"; };
+		22A43DA7143C2481005E2A52 /* MixiImageButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiImageButtonView.h; sourceTree = "<group>"; };
+		22A43DA8143C2481005E2A52 /* MixiImageButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiImageButtonView.m; sourceTree = "<group>"; };
+		22A43DAA143C2481005E2A52 /* MixiDownloadWebViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiDownloadWebViewDelegate.h; sourceTree = "<group>"; };
+		22A43DAB143C2481005E2A52 /* MixiDownloadWebViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiDownloadWebViewDelegate.m; sourceTree = "<group>"; };
+		22A43DAC143C2481005E2A52 /* MixiOrientationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiOrientationDelegate.h; sourceTree = "<group>"; };
+		22A43DAD143C2481005E2A52 /* MixiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiViewController.h; sourceTree = "<group>"; };
+		22A43DAE143C2481005E2A52 /* MixiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiViewController.m; sourceTree = "<group>"; };
+		22A43DAF143C2481005E2A52 /* MixiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiViewController.xib; sourceTree = "<group>"; };
+		22A43DB0143C2481005E2A52 /* MixiWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiWebViewController.h; sourceTree = "<group>"; };
+		22A43DB1143C2481005E2A52 /* MixiWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiWebViewController.m; sourceTree = "<group>"; };
+		22A43DB2143C2481005E2A52 /* MixiWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiWebViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22A43B7B143BF8F8005E2A52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A43C4A143BF9A1005E2A52 /* SystemConfiguration.framework in Frameworks */,
+				22A43C48143BF99D005E2A52 /* Security.framework in Frameworks */,
+				22A43C46143BF998005E2A52 /* CFNetwork.framework in Frameworks */,
+				22A43B83143BF8F8005E2A52 /* UIKit.framework in Frameworks */,
+				22A43B85143BF8F8005E2A52 /* Foundation.framework in Frameworks */,
+				22A43B87143BF8F8005E2A52 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2214AC3A143D499600E1D41A /* ChooseAPI */ = {
+			isa = PBXGroup;
+			children = (
+				2214AC3B143D499600E1D41A /* ChooseAPIViewController.h */,
+				2214AC3C143D499600E1D41A /* ChooseAPIViewController.m */,
+				2214AC3D143D499600E1D41A /* ChooseAPIViewController.xib */,
+			);
+			path = ChooseAPI;
+			sourceTree = "<group>";
+		};
+		2214AC3E143D499600E1D41A /* EditBody */ = {
+			isa = PBXGroup;
+			children = (
+				2214AC3F143D499600E1D41A /* EditBodyViewController.h */,
+				2214AC40143D499600E1D41A /* EditBodyViewController.m */,
+				2214AC41143D499600E1D41A /* EditBodyViewController.xib */,
+			);
+			path = EditBody;
+			sourceTree = "<group>";
+		};
+		2214AC46143D49AE00E1D41A /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				2214AC47143D49AE00E1D41A /* RequestView.xib */,
+				2214AC48143D49AE00E1D41A /* RequestViewController.h */,
+				2214AC49143D49AE00E1D41A /* RequestViewController.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		2214AC4A143D49AE00E1D41A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2214AC4B143D49AE00E1D41A /* SettingsView.xib */,
+				2214AC4C143D49AE00E1D41A /* SettingsViewController.h */,
+				2214AC4D143D49AE00E1D41A /* SettingsViewController.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2214AC4E143D49AE00E1D41A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2214AC4F143D49AE00E1D41A /* Config.h */,
+				2214AC50143D49AE00E1D41A /* MixiApi.h */,
+				2214AC51143D49AE00E1D41A /* MixiApi.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		22A43B73143BF8F8005E2A52 = {
+			isa = PBXGroup;
+			children = (
+				22A43B88143BF8F8005E2A52 /* MixiSDKSample */,
+				22A43B81143BF8F8005E2A52 /* Frameworks */,
+				22A43B7F143BF8F8005E2A52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22A43B7F143BF8F8005E2A52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22A43B7E143BF8F8005E2A52 /* MixiSDKSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22A43B81143BF8F8005E2A52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22A43C49143BF9A1005E2A52 /* SystemConfiguration.framework */,
+				22A43C47143BF99D005E2A52 /* Security.framework */,
+				22A43C45143BF998005E2A52 /* CFNetwork.framework */,
+				22A43B82143BF8F8005E2A52 /* UIKit.framework */,
+				22A43B84143BF8F8005E2A52 /* Foundation.framework */,
+				22A43B86143BF8F8005E2A52 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22A43B88143BF8F8005E2A52 /* MixiSDKSample */ = {
+			isa = PBXGroup;
+			children = (
+				22A43B91143BF8F8005E2A52 /* MixiSDKSampleAppDelegate.h */,
+				22A43B92143BF8F8005E2A52 /* MixiSDKSampleAppDelegate.m */,
+				2214AC46143D49AE00E1D41A /* Request */,
+				2214AC4A143D49AE00E1D41A /* Settings */,
+				2214AC3A143D499600E1D41A /* ChooseAPI */,
+				2214AC3E143D499600E1D41A /* EditBody */,
+				2214AC4E143D49AE00E1D41A /* Util */,
+				22A43D5C143C2481005E2A52 /* MixiSDK */,
+				22A43BB4143BF975005E2A52 /* en.lproj */,
+				22A43B89143BF8F8005E2A52 /* Supporting Files */,
+			);
+			path = MixiSDKSample;
+			sourceTree = "<group>";
+		};
+		22A43B89143BF8F8005E2A52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22A43B8A143BF8F8005E2A52 /* MixiSDKSample-Info.plist */,
+				22A43B8B143BF8F8005E2A52 /* InfoPlist.strings */,
+				22A43B8E143BF8F8005E2A52 /* MixiSDKSample-Prefix.pch */,
+				22A43B8F143BF8F8005E2A52 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22A43BB4143BF975005E2A52 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				22A43BB5143BF975005E2A52 /* InfoPlist.strings */,
+				22A43BB7143BF975005E2A52 /* MainWindow.xib */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		22A43D5C143C2481005E2A52 /* MixiSDK */ = {
+			isa = PBXGroup;
+			children = (
+				22A43D5D143C2481005E2A52 /* Doxyfile */,
+				22A43D5E143C2481005E2A52 /* Ext */,
+				22A43D80143C2481005E2A52 /* History.txt */,
+				22A43D81143C2481005E2A52 /* LICENSE-2.0.txt */,
+				22A43D82143C2481005E2A52 /* Mixi.h */,
+				22A43D83143C2481005E2A52 /* Mixi.m */,
+				22A43D84143C2481005E2A52 /* MixiApiType.h */,
+				22A43D85143C2481005E2A52 /* MixiConfig.h */,
+				22A43D86143C2481005E2A52 /* MixiConfig.m */,
+				22A43D87143C2481005E2A52 /* MixiDelegate.h */,
+				22A43D88143C2481005E2A52 /* MixiRequest.h */,
+				22A43D89143C2481005E2A52 /* MixiRequest.m */,
+				22A43D8A143C2481005E2A52 /* MixiSDK.h */,
+				22A43D8B143C2481005E2A52 /* Networking */,
+				22A43D90143C2481005E2A52 /* README */,
+				22A43D91143C2481005E2A52 /* README.markdown */,
+				22A43D92143C2481005E2A52 /* Resources */,
+				22A43D9B143C2481005E2A52 /* Util */,
+				22A43DA4143C2481005E2A52 /* View */,
+				22A43DA9143C2481005E2A52 /* ViewController */,
+			);
+			path = MixiSDK;
+			sourceTree = "<group>";
+		};
+		22A43D5E143C2481005E2A52 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				22A43D5F143C2481005E2A52 /* Reachability */,
+				22A43D62143C2481005E2A52 /* SBJson */,
+				22A43D7D143C2481005E2A52 /* SFHFKeychainUtils */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		22A43D5F143C2481005E2A52 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				22A43D60143C2481005E2A52 /* Reachability.h */,
+				22A43D61143C2481005E2A52 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		22A43D62143C2481005E2A52 /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				22A43D63143C2481005E2A52 /* NSObject+SBJson.h */,
+				22A43D64143C2481005E2A52 /* NSObject+SBJson.m */,
+				22A43D65143C2481005E2A52 /* SBJson-LICENSE.txt */,
+				22A43D66143C2481005E2A52 /* SBJson.h */,
+				22A43D67143C2481005E2A52 /* SBJsonParser.h */,
+				22A43D68143C2481005E2A52 /* SBJsonParser.m */,
+				22A43D69143C2481005E2A52 /* SBJsonStreamParser.h */,
+				22A43D6A143C2481005E2A52 /* SBJsonStreamParser.m */,
+				22A43D6B143C2481005E2A52 /* SBJsonStreamParserAccumulator.h */,
+				22A43D6C143C2481005E2A52 /* SBJsonStreamParserAccumulator.m */,
+				22A43D6D143C2481005E2A52 /* SBJsonStreamParserAdapter.h */,
+				22A43D6E143C2481005E2A52 /* SBJsonStreamParserAdapter.m */,
+				22A43D6F143C2481005E2A52 /* SBJsonStreamParserState.h */,
+				22A43D70143C2481005E2A52 /* SBJsonStreamParserState.m */,
+				22A43D71143C2481005E2A52 /* SBJsonStreamWriter.h */,
+				22A43D72143C2481005E2A52 /* SBJsonStreamWriter.m */,
+				22A43D73143C2481005E2A52 /* SBJsonStreamWriterAccumulator.h */,
+				22A43D74143C2481005E2A52 /* SBJsonStreamWriterAccumulator.m */,
+				22A43D75143C2481005E2A52 /* SBJsonStreamWriterState.h */,
+				22A43D76143C2481005E2A52 /* SBJsonStreamWriterState.m */,
+				22A43D77143C2481005E2A52 /* SBJsonTokeniser.h */,
+				22A43D78143C2481005E2A52 /* SBJsonTokeniser.m */,
+				22A43D79143C2481005E2A52 /* SBJsonUTF8Stream.h */,
+				22A43D7A143C2481005E2A52 /* SBJsonUTF8Stream.m */,
+				22A43D7B143C2481005E2A52 /* SBJsonWriter.h */,
+				22A43D7C143C2481005E2A52 /* SBJsonWriter.m */,
+			);
+			path = SBJson;
+			sourceTree = "<group>";
+		};
+		22A43D7D143C2481005E2A52 /* SFHFKeychainUtils */ = {
+			isa = PBXGroup;
+			children = (
+				22A43D7E143C2481005E2A52 /* SFHFKeychainUtils.h */,
+				22A43D7F143C2481005E2A52 /* SFHFKeychainUtils.m */,
+			);
+			path = SFHFKeychainUtils;
+			sourceTree = "<group>";
+		};
+		22A43D8B143C2481005E2A52 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				22A43D8C143C2481005E2A52 /* MixiURLConnection.h */,
+				22A43D8D143C2481005E2A52 /* MixiURLConnection.m */,
+				22A43D8E143C2481005E2A52 /* MixiURLDelegate.h */,
+				22A43D8F143C2481005E2A52 /* MixiURLDelegate.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		22A43D92143C2481005E2A52 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22A43D93143C2481005E2A52 /* mixi_map_bg.png */,
+				22A43D94143C2481005E2A52 /* mixi_map_bg@2x.png */,
+				22A43D95143C2481005E2A52 /* mixi_map_list.png */,
+				22A43D96143C2481005E2A52 /* mixi_map_list@2x.png */,
+				22A43D97143C2481005E2A52 /* mixi_map_logo.png */,
+				22A43D98143C2481005E2A52 /* mixi_map_logo@2x.png */,
+				22A43D99143C2481005E2A52 /* mixi_map_search.png */,
+				22A43D9A143C2481005E2A52 /* mixi_map_search@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22A43D9B143C2481005E2A52 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				22A43D9C143C2481005E2A52 /* MixiConstants.h */,
+				22A43D9D143C2481005E2A52 /* MixiErrorCodes.h */,
+				22A43D9E143C2481005E2A52 /* MixiRefreshTokenURLDelegate.h */,
+				22A43D9F143C2481005E2A52 /* MixiRefreshTokenURLDelegate.m */,
+				22A43DA0143C2481005E2A52 /* MixiReporter.h */,
+				22A43DA1143C2481005E2A52 /* MixiReporter.m */,
+				22A43DA2143C2481005E2A52 /* MixiUtils.h */,
+				22A43DA3143C2481005E2A52 /* MixiUtils.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		22A43DA4143C2481005E2A52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22A43DA5143C2481005E2A52 /* MixiADBannerView.h */,
+				22A43DA6143C2481005E2A52 /* MixiADBannerView.m */,
+				22A43DA7143C2481005E2A52 /* MixiImageButtonView.h */,
+				22A43DA8143C2481005E2A52 /* MixiImageButtonView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22A43DA9143C2481005E2A52 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22A43DAA143C2481005E2A52 /* MixiDownloadWebViewDelegate.h */,
+				22A43DAB143C2481005E2A52 /* MixiDownloadWebViewDelegate.m */,
+				22A43DAC143C2481005E2A52 /* MixiOrientationDelegate.h */,
+				22A43DAD143C2481005E2A52 /* MixiViewController.h */,
+				22A43DAE143C2481005E2A52 /* MixiViewController.m */,
+				22A43DAF143C2481005E2A52 /* MixiViewController.xib */,
+				22A43DB0143C2481005E2A52 /* MixiWebViewController.h */,
+				22A43DB1143C2481005E2A52 /* MixiWebViewController.m */,
+				22A43DB2143C2481005E2A52 /* MixiWebViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22A43B7D143BF8F8005E2A52 /* MixiSDKSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A43BA3143BF8F8005E2A52 /* Build configuration list for PBXNativeTarget "MixiSDKSample" */;
+			buildPhases = (
+				22A43B7A143BF8F8005E2A52 /* Sources */,
+				22A43B7B143BF8F8005E2A52 /* Frameworks */,
+				22A43B7C143BF8F8005E2A52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MixiSDKSample;
+			productName = MixiSDKSample;
+			productReference = 22A43B7E143BF8F8005E2A52 /* MixiSDKSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22A43B75143BF8F8005E2A52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "mixi Inc.";
+			};
+			buildConfigurationList = 22A43B78143BF8F8005E2A52 /* Build configuration list for PBXProject "MixiSDKSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 22A43B73143BF8F8005E2A52;
+			productRefGroup = 22A43B7F143BF8F8005E2A52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22A43B7D143BF8F8005E2A52 /* MixiSDKSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22A43B7C143BF8F8005E2A52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A43B8D143BF8F8005E2A52 /* InfoPlist.strings in Resources */,
+				22A43BBD143BF975005E2A52 /* InfoPlist.strings in Resources */,
+				22A43BBE143BF975005E2A52 /* MainWindow.xib in Resources */,
+				22A43DB3143C2481005E2A52 /* Doxyfile in Resources */,
+				22A43DB6143C2481005E2A52 /* SBJson-LICENSE.txt in Resources */,
+				22A43DC3143C2481005E2A52 /* History.txt in Resources */,
+				22A43DC4143C2481005E2A52 /* LICENSE-2.0.txt in Resources */,
+				22A43DCA143C2481005E2A52 /* README in Resources */,
+				22A43DCB143C2481005E2A52 /* README.markdown in Resources */,
+				22A43DCC143C2481005E2A52 /* mixi_map_bg.png in Resources */,
+				22A43DCD143C2481005E2A52 /* mixi_map_bg@2x.png in Resources */,
+				22A43DCE143C2481005E2A52 /* mixi_map_list.png in Resources */,
+				22A43DCF143C2481005E2A52 /* mixi_map_list@2x.png in Resources */,
+				22A43DD0143C2481005E2A52 /* mixi_map_logo.png in Resources */,
+				22A43DD1143C2481005E2A52 /* mixi_map_logo@2x.png in Resources */,
+				22A43DD2143C2481005E2A52 /* mixi_map_search.png in Resources */,
+				22A43DD3143C2481005E2A52 /* mixi_map_search@2x.png in Resources */,
+				22A43DDB143C2481005E2A52 /* MixiViewController.xib in Resources */,
+				22A43DDD143C2481005E2A52 /* MixiWebViewController.xib in Resources */,
+				2214AC43143D499600E1D41A /* ChooseAPIViewController.xib in Resources */,
+				2214AC45143D499600E1D41A /* EditBodyViewController.xib in Resources */,
+				2214AC52143D49AE00E1D41A /* RequestView.xib in Resources */,
+				2214AC54143D49AE00E1D41A /* SettingsView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22A43B7A143BF8F8005E2A52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A43B90143BF8F8005E2A52 /* main.m in Sources */,
+				22A43B93143BF8F8005E2A52 /* MixiSDKSampleAppDelegate.m in Sources */,
+				22A43DB4143C2481005E2A52 /* Reachability.m in Sources */,
+				22A43DB5143C2481005E2A52 /* NSObject+SBJson.m in Sources */,
+				22A43DB7143C2481005E2A52 /* SBJsonParser.m in Sources */,
+				22A43DB8143C2481005E2A52 /* SBJsonStreamParser.m in Sources */,
+				22A43DB9143C2481005E2A52 /* SBJsonStreamParserAccumulator.m in Sources */,
+				22A43DBA143C2481005E2A52 /* SBJsonStreamParserAdapter.m in Sources */,
+				22A43DBB143C2481005E2A52 /* SBJsonStreamParserState.m in Sources */,
+				22A43DBC143C2481005E2A52 /* SBJsonStreamWriter.m in Sources */,
+				22A43DBD143C2481005E2A52 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				22A43DBE143C2481005E2A52 /* SBJsonStreamWriterState.m in Sources */,
+				22A43DBF143C2481005E2A52 /* SBJsonTokeniser.m in Sources */,
+				22A43DC0143C2481005E2A52 /* SBJsonUTF8Stream.m in Sources */,
+				22A43DC1143C2481005E2A52 /* SBJsonWriter.m in Sources */,
+				22A43DC2143C2481005E2A52 /* SFHFKeychainUtils.m in Sources */,
+				22A43DC5143C2481005E2A52 /* Mixi.m in Sources */,
+				22A43DC6143C2481005E2A52 /* MixiConfig.m in Sources */,
+				22A43DC7143C2481005E2A52 /* MixiRequest.m in Sources */,
+				22A43DC8143C2481005E2A52 /* MixiURLConnection.m in Sources */,
+				22A43DC9143C2481005E2A52 /* MixiURLDelegate.m in Sources */,
+				22A43DD4143C2481005E2A52 /* MixiRefreshTokenURLDelegate.m in Sources */,
+				22A43DD5143C2481005E2A52 /* MixiReporter.m in Sources */,
+				22A43DD6143C2481005E2A52 /* MixiUtils.m in Sources */,
+				22A43DD7143C2481005E2A52 /* MixiADBannerView.m in Sources */,
+				22A43DD8143C2481005E2A52 /* MixiImageButtonView.m in Sources */,
+				22A43DD9143C2481005E2A52 /* MixiDownloadWebViewDelegate.m in Sources */,
+				22A43DDA143C2481005E2A52 /* MixiViewController.m in Sources */,
+				22A43DDC143C2481005E2A52 /* MixiWebViewController.m in Sources */,
+				2214AC42143D499600E1D41A /* ChooseAPIViewController.m in Sources */,
+				2214AC44143D499600E1D41A /* EditBodyViewController.m in Sources */,
+				2214AC53143D49AE00E1D41A /* RequestViewController.m in Sources */,
+				2214AC55143D49AE00E1D41A /* SettingsViewController.m in Sources */,
+				2214AC56143D49AE00E1D41A /* MixiApi.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		22A43B8B143BF8F8005E2A52 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22A43B8C143BF8F8005E2A52 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		22A43BB5143BF975005E2A52 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22A43BB6143BF975005E2A52 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		22A43BB7143BF975005E2A52 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22A43BB8143BF975005E2A52 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22A43BA1143BF8F8005E2A52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		22A43BA2143BF8F8005E2A52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		22A43BA4143BF8F8005E2A52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixiSDKSample/MixiSDKSample-Prefix.pch";
+				INFOPLIST_FILE = "MixiSDKSample/MixiSDKSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		22A43BA5143BF8F8005E2A52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixiSDKSample/MixiSDKSample-Prefix.pch";
+				INFOPLIST_FILE = "MixiSDKSample/MixiSDKSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22A43B78143BF8F8005E2A52 /* Build configuration list for PBXProject "MixiSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A43BA1143BF8F8005E2A52 /* Debug */,
+				22A43BA2143BF8F8005E2A52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22A43BA3143BF8F8005E2A52 /* Build configuration list for PBXNativeTarget "MixiSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A43BA4143BF8F8005E2A52 /* Debug */,
+				22A43BA5143BF8F8005E2A52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22A43B75143BF8F8005E2A52 /* Project object */;
+}
